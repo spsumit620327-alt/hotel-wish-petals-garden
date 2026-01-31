@@ -1,111 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hotel Wish Petals Garden</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Wish Petals Garden</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      text-align: center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    /* Banner */
-    .banner {
-      background: linear-gradient(135deg, #2c3e50, #000);
-      color: #fff;
-      padding: 40px 15px;
-    }
+<style>
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#f4f4f4;
+  color:#333;
+}
 
-    .banner h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
+/* HERO */
+.hero{
+  background:url("https://images.unsplash.com/photo-1566073771259-6a8506099945") center/cover no-repeat;
+  padding:80px 15px;
+  color:white;
+  text-align:center;
+  position:relative;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+}
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+.hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+.hero p{
+  font-size:18px;
+}
 
-    .banner p {
-      font-size: 16px;
-      opacity: 0.9;
-    }
+/* BUTTONS */
+.buttons{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin:25px;
+}
+.btn{
+  padding:15px;
+  font-size:18px;
+  font-weight:600;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+}
+.call{background:#e74c3c;}
+.whatsapp{background:#25D366;}
+.maps{background:#3498db;}
 
-    /* Buttons */
-    .buttons {
-      margin: 30px 15px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  padding:25px;
+}
+.feature{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
 
-    .btn {
-      text-decoration: none;
-      padding: 15px;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 8px;
-      color: #fff;
-      transition: 0.3s;
-    }
+/* GALLERY */
+.gallery{
+  padding:20px;
+}
+.gallery img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:15px;
+}
 
-    .call {
-      background: #e74c3c;
-    }
-
-    .whatsapp {
-      background: #25D366;
-    }
-
-    .maps {
-      background: #3498db;
-    }
-
-    .btn:hover {
-      opacity: 0.85;
-      transform: scale(1.02);
-    }
-
-    /* Footer */
-    .footer {
-      margin-top: 40px;
-      padding: 15px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+/* FOOTER */
+.footer{
+  background:#111;
+  color:#aaa;
+  padding:15px;
+  text-align:center;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- BIG HOTEL NAME BANNER -->
-  <div class="banner">
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
     <h1>HOTEL WISH PETALS GARDEN</h1>
-    <p>Book Rooms • Events • Functions</p>
+    <p>Luxury Rooms • Wedding • Party • Events</p>
   </div>
+</div>
 
-  <!-- ACTION BUTTONS -->
-  <div class="buttons">
-    <!-- Call Now -->
-    <a class="btn call" href="tel:09315635722">
-      📞 Call Now
-    </a>
+<!-- ACTION BUTTONS -->
+<div class="buttons">
+  <a class="btn call" href="tel:09315635722">📞 Call Now</a>
+  <a class="btn whatsapp" href="https://wa.me/919315635722?text=Hello%20I%20want%20to%20book%20Hotel%20Wish%20Petals%20Garden" target="_blank">💬 WhatsApp Booking</a>
+  <a class="btn maps" href="https://maps.app.goo.gl/QiyEdPEgCUmQbyAH7" target="_blank">📍 Open in Google Maps</a>
+</div>
 
-    <!-- WhatsApp Booking -->
-    <a class="btn whatsapp" href="https://wa.me/919315635722?text=Hello%20I%20want%20to%20book%20Hotel%20Wish%20Petals%20Garden" target="_blank">
-      💬 WhatsApp Booking
-    </a>
+<!-- FEATURES -->
+<div class="features">
+  <div class="feature">✅ Luxury & Spacious Rooms</div>
+  <div class="feature">✅ Wedding & Party Garden</div>
+  <div class="feature">✅ Prime Location</div>
+  <div class="feature">✅ Affordable Pricing</div>
+</div>
 
-    <!-- Google Maps -->
-    <a class="btn maps" href="https://maps.app.goo.gl/QiyEdPEgCUmQbyAH7" target="_blank">
-      📍 Open in Google Maps
-    </a>
-  </div>
+<!-- GALLERY -->
+<div class="gallery">
+  <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa">
+  <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4">
+  <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb">
+</div>
 
-  <!-- FOOTER -->
-  <div class="footer">
-    © Hotel Wish Petals Garden | Website powered by Netlify
-  </div>
+<!-- FOOTER -->
+<div class="footer">
+  © Hotel Wish Petals Garden | Powered by Netlify
+</div>
 
 </body>
 </html>
